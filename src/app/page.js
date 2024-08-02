@@ -1,5 +1,4 @@
 import ListingItem from '@/components/ListingItem';
-import Image from 'next/image';
 import Link from 'next/link';
 import { defineOneEntry } from 'oneentry';
 
@@ -32,9 +31,9 @@ export default async function Home() {
           Let&apos;s get started...
         </Link>
       </div>
-      <Image
+      <img
         src='https://firebasestorage.googleapis.com/v0/b/mern-auth-1c4ae.appspot.com/o/1693307829089home%203.jpeg?alt=media&token=8dcc9a22-a8d3-4737-b27f-7c77b417a7d0'
-        className='w-full h-[550px] object-cover' alt=''
+        className='w-full h-[550px] object-cover' 
       />
 
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>

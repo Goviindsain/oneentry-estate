@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { defineOneEntry } from 'oneentry';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaBed, FaBath } from 'react-icons/fa';
@@ -15,9 +14,9 @@ export default async function ListingPage({ params }) {
     <main className='mb-28'>
       {listing && listing.statusCode !== 404 && (
         <div>
-          <Image
+          <img
             src={listing.attributeValues.image.value.downloadLink}
-            className='w-full h-[550px] object-cover' alt=''
+            className='w-full h-[550px] object-cover' 
           />
           <div className='flex flex-col max-w-4xl mx-auto p-3 my-7 gap-4'>
             <p className='text-2xl font-semibold'>
